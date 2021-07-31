@@ -1,0 +1,6 @@
+updata_info:
+- ["ceshi01",{'code': 200, 'data': None, 'flag': True, 'message': '编辑成功!', 'success': True}]
+- ["",{"flag":false,"code":500,"message":"参数验证不通过!","data":null,"success":false}]
+updata_teacher_info:
+  - ["1111",{"flag":true,"code":200,"message":"编辑成功!","data":null,"success":true}]
+  - ['李四',{"flag":true,"code":200,"message":"编辑成功!","data":null,"success":true}]
