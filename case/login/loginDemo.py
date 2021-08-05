@@ -4,11 +4,13 @@
 # @Software: PyCharm
 import requests
 import re
+import os
 #学生云的登录的接口
-
+os.environ['host'] = 'http://222.128.6.177:8666'
+cloudHost=os.environ.get('host')
 def login(s):
     jsonParms={"account":"ceshi","password":"90db7a241ee36462c1d24a2cc45c1c8c"}
-    url='http://222.128.6.177:8666/cloudApi/front/teacher/login'
+    url=cloudHost+'/cloudApi/front/teacher/login'
     r=s.post(url,json=jsonParms)
     print('登录返回json是：%s'%r.text)
     print('登录cookie是：%s'%s.cookies)
